@@ -1,30 +1,121 @@
-function loadDashboard() {
+<!DOCTYPE html>
+<html lang="en">
 
-    const checks =
-        localStorage.getItem("newsChecks") || 0;
+<head>
+    <meta charset="UTF-8">
 
-    const quizzes =
-        localStorage.getItem("quizAttempts") || 0;
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    const surveys =
-        localStorage.getItem("surveyResponses") || 0;
+    <title>Project Dashboard - TruthCheck</title>
 
-    const score =
-        localStorage.getItem("mediaLiteracyScore");
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">TruthCheck</div>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="index.html">Home</a>
+        <a href="checker.html">News Checker</a>
+        <a href="news.html">Awareness</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="tips.html">Media Literacy</a>
+        <a href="survey.html">Survey</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="about.html">About</a>
+
+    </div>
+
+</nav>
 
 
-    document.getElementById("checkCount").textContent =
-        checks;
+<section class="section">
 
-    document.getElementById("quizCount").textContent =
-        quizzes;
+    <h2>📊 Project Dashboard</h2>
 
-    document.getElementById("surveyCount").textContent =
-        surveys;
-
-    document.getElementById("awarenessScore").textContent =
-        score !== null ? score + " / 10" : "0 / 10";
-}
+    <p class="section-intro">
+        Live activity summary of this browser's usage
+        of the TruthCheck educational tools.
+    </p>
 
 
-loadDashboard();
+    <div class="dashboard-grid">
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">🔍</div>
+            <h3>News Checks</h3>
+            <div id="checkCount">0</div>
+        </div>
+
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">🧠</div>
+            <h3>Quiz Attempts</h3>
+            <div id="quizCount">0</div>
+        </div>
+
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">📋</div>
+            <h3>Survey Responses</h3>
+            <div id="surveyCount">0</div>
+        </div>
+
+
+        <div class="dashboard-card">
+            <div class="dashboard-icon">📈</div>
+            <h3>Latest Awareness Score</h3>
+            <div id="awarenessScore">0 / 10</div>
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-info">
+
+        <h3>About This Dashboard</h3>
+
+        <p>
+            The dashboard uses browser LocalStorage to
+            demonstrate dynamic data handling.
+        </p>
+
+        <p>
+            Data is stored locally in the user's browser
+            and is not a real community-wide database.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>TruthCheck</h3>
+
+    <p>
+        Fake News Detection & Media Literacy Programme
+    </p>
+
+    <p class="copyright">
+        © 2026 CEP Project | Educational Purpose
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
