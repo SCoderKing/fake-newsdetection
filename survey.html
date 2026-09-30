@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Awareness Survey - TruthCheck</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">TruthCheck</div>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="index.html">Home</a>
+
+        <a href="checker.html">News Checker</a>
+
+        <a href="news.html">Awareness</a>
+
+        <a href="quiz.html">Quiz</a>
+
+        <a href="tips.html">Media Literacy</a>
+
+        <a href="survey.html">Survey</a>
+
+        <a href="about.html">About</a>
+
+    </div>
+
+</nav>
+
+
+<!-- Survey -->
+
+<section class="section">
+
+    <h2>📊 Media Literacy Awareness Survey</h2>
+
+    <p class="section-intro">
+
+        Answer the following questions to understand
+        your current awareness of misinformation.
+
+    </p>
+
+
+    <div class="survey-box">
+
+
+        <!-- Question 1 -->
+
+        <div class="survey-question">
+
+            <h3>
+                1. Do you check the source before sharing news?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q1"
+                       value="2">
+                Always
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q1"
+                       value="1">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q1"
+                       value="0">
+                Never
+            </label>
+
+        </div>
+
+
+        <!-- Question 2 -->
+
+        <div class="survey-question">
+
+            <h3>
+                2. Do you check the date of an online news article?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q2"
+                       value="2">
+                Always
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q2"
+                       value="1">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q2"
+                       value="0">
+                Never
+            </label>
+
+        </div>
+
+
+        <!-- Question 3 -->
+
+        <div class="survey-question">
+
+            <h3>
+                3. Do you verify suspicious messages before forwarding?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q3"
+                       value="2">
+                Always
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q3"
+                       value="1">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q3"
+                       value="0">
+                Never
+            </label>
+
+        </div>
+
+
+        <!-- Question 4 -->
+
+        <div class="survey-question">
+
+            <h3>
+                4. Do you compare information with other sources?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q4"
+                       value="2">
+                Always
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q4"
+                       value="1">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q4"
+                       value="0">
+                Never
+            </label>
+
+        </div>
+
+
+        <!-- Question 5 -->
+
+        <div class="survey-question">
+
+            <h3>
+                5. Do you check whether an image is being used
+                in the correct context?
+            </h3>
+
+            <label>
+                <input type="radio"
+                       name="q5"
+                       value="2">
+                Always
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q5"
+                       value="1">
+                Sometimes
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="q5"
+                       value="0">
+                Never
+            </label>
+
+        </div>
+
+
+        <button class="btn primary-btn"
+                onclick="calculateSurvey()">
+
+            Submit Survey
+
+        </button>
+
+
+        <!-- Result -->
+
+        <div id="surveyResult"></div>
+
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>TruthCheck</h3>
+
+    <p>
+        Fake News Detection & Media Literacy Programme
+    </p>
+
+    <p class="copyright">
+        © 2026 CEP Project | Educational Purpose
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script src="survey.js"></script>
+
+
+</body>
+
+</html>

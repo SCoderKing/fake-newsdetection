@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Check Before You Share",
+        "category": "Media Literacy",
+        "description": "Always verify the source and context of information before sharing it online.",
+        "type": "Tip"
+    },
+    {
+        "title": "Beware of Sensational Headlines",
+        "category": "Awareness",
+        "description": "Headlines designed to create shock or fear may not provide the complete context.",
+        "type": "Awareness"
+    },
+    {
+        "title": "Check the Date",
+        "category": "Verification",
+        "description": "Old photographs and news stories can sometimes be shared as if they are recent.",
+        "type": "Tip"
+    },
+    {
+        "title": "Verify the Original Source",
+        "category": "Verification",
+        "description": "Look for the original publisher and compare important claims with reliable sources.",
+        "type": "Important"
+    },
+    {
+        "title": "Do Not Trust Every Forwarded Message",
+        "category": "Social Media",
+        "description": "Messages received through social media or messaging apps should be checked before forwarding.",
+        "type": "Awareness"
+    },
+    {
+        "title": "Images Can Be Misleading",
+        "category": "Digital Literacy",
+        "description": "An image may be old, edited or presented without its original context.",
+        "type": "Awareness"
+    }
+]

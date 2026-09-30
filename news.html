@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>News & Awareness - TruthCheck</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">TruthCheck</div>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="index.html">Home</a>
+
+        <a href="checker.html">News Checker</a>
+
+        <a href="news.html">Awareness</a>
+
+        <a href="quiz.html">Quiz</a>
+
+        <a href="tips.html">Media Literacy</a>
+
+        <a href="about.html">About</a>
+
+    </div>
+
+</nav>
+
+
+<!-- Page -->
+
+<section class="section">
+
+    <h2>📰 News & Awareness</h2>
+
+    <p class="section-intro">
+
+        Learn simple techniques for identifying
+        misleading information and checking online content.
+
+    </p>
+
+
+    <!-- Search -->
+
+    <div class="news-search">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search awareness topics..."
+            onkeyup="searchNews()">
+
+    </div>
+
+
+    <!-- Dynamic News -->
+
+    <div id="newsContainer" class="cards">
+
+        <p>Loading information...</p>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>TruthCheck</h3>
+
+    <p>
+        Fake News Detection & Media Literacy Programme
+    </p>
+
+    <p class="copyright">
+        © 2026 CEP Project | Educational Purpose
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+<script src="news.js"></script>
+
+
+</body>
+
+</html>

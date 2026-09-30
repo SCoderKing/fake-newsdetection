@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Media Literacy Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">TruthCheck</div>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="index.html">Home</a>
+        <a href="checker.html">News Checker</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="tips.html">Media Literacy</a>
+        <a href="about.html">About</a>
+
+    </div>
+
+</nav>
+
+
+<section class="section">
+
+    <h2>🧠 Media Literacy Quiz</h2>
+
+    <p class="section-intro">
+
+        Test your knowledge about misinformation
+        and responsible sharing.
+
+    </p>
+
+
+    <div class="quiz-box">
+
+        <div class="question">
+
+            <h3>1. What should you do before sharing suspicious news?</h3>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                Share it immediately
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="1">
+                Verify the information
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="0">
+                Ignore the source
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>2. Which is a useful thing to check?</h3>
+
+            <label>
+                <input type="radio" name="q2" value="1">
+                Source of the information
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Number of emojis
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="0">
+                Message colour
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>3. Can a sensational headline be misleading?</h3>
+
+            <label>
+                <input type="radio" name="q3" value="1">
+                Yes
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="0">
+                No
+            </label>
+
+        </div>
+
+
+        <button class="btn primary-btn"
+                onclick="calculateScore()">
+
+            Submit Quiz
+
+        </button>
+
+
+        <div id="score"></div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>TruthCheck</h3>
+
+    <p>Fake News Detection & Media Literacy Programme</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+<script src="js/quiz.js"></script>
+
+
+</body>
+
+</html>
